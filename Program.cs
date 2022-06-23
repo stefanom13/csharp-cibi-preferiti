@@ -2,6 +2,7 @@
 
 string[] cibi = { "Hamburger", "Pizza", "Pasta", "Insalata di Mare", "Parmigiana", "Riso con Tonno" };
 
-Console.WriteLine(cibi[0]);
+
+Console.WriteLine("\nLunghezza della classifica: " + cibi.Length);
 
 
