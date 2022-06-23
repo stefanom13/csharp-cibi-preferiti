@@ -35,3 +35,33 @@ if (cibiPref != null && cibiPref.Length > 0)
         Console.WriteLine("\nCibo mediano: " + cibiPref[cibiPref.Length / 2]);
     }
 }
+Random rnd = new Random();
+
+Console.WriteLine("Inserire Il tuo cibo preferito");
+int numeroRandom = rnd.Next(1, cibiPref.Length);
+#pragma warning disable CS8600 // Conversione del valore letterale Null o di un possibile valore Null in un tipo che non ammette i valori Null.
+string ciboUtente = Console.ReadLine();
+#pragma warning restore CS8600 // Conversione del valore letterale Null o di un possibile valore Null in un tipo che non ammette i valori Null.
+
+
+for (int i = 0; i < cibiPref.Length; i++)
+{
+    if (ciboUtente == cibiPref[i] && cibiPref[numeroRandom] == cibiPref[i])
+    {
+        Console.WriteLine((i + 1) + "° " + cibiPref[i] + " ---> Avete gli stessi gusti");
+    }
+    else if (ciboUtente == cibiPref[i])
+    {
+        Console.WriteLine((i + 1) + "° " + cibiPref[i] + " ---> Questo è il tuo cibo preferito");
+
+    }
+    else if (cibiPref[i] == cibiPref[numeroRandom])
+    {
+
+        Console.WriteLine((i + 1) + "° " + cibiPref[i] + " ---> Questo è il cibo preferito del pc");
+    }
+    else
+    {
+        Console.WriteLine((i + 1) + "° " + cibiPref[i]);
+    }
+}
