@@ -29,5 +29,9 @@ if (cibiPref != null && cibiPref.Length > 0)
     {
         Console.WriteLine("\nCibo mediani: " + cibiPref[cibiPref.Length / 2 - 1] + " e " + cibiPref[cibiPref.Length / 2]);
     }
-  
+    else
+    //stampo cibo nel mezzo  else//
+    {
+        Console.WriteLine("\nCibo mediano: " + cibiPref[cibiPref.Length / 2]);
+    }
 }
