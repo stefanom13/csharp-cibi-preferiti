@@ -37,11 +37,9 @@ if (cibiPref != null && cibiPref.Length > 0)
 }
 Random rnd = new Random();
 
-Console.WriteLine("Inserire Il tuo cibo preferito");
+Console.WriteLine("Inserire Il cibo preferito");
 int numeroRandom = rnd.Next(1, cibiPref.Length);
-#pragma warning disable CS8600 // Conversione del valore letterale Null o di un possibile valore Null in un tipo che non ammette i valori Null.
 string ciboUtente = Console.ReadLine();
-#pragma warning restore CS8600 // Conversione del valore letterale Null o di un possibile valore Null in un tipo che non ammette i valori Null.
 
 
 for (int i = 0; i < cibiPref.Length; i++)
